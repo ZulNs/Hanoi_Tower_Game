@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!--meta http-equiv="refresh" content="1;url="-->
+    <title>Hanoi Tower Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ZulNs">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+    <meta name="copyright" content="ZulNs">
+    <meta name="validity_code" content="88CAE6D2CEDCCAC840C4F240B4EAD89CE640808EDEE4DEDCE8C2D8DE584062604094C2DCEAC2E4F24064606462">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="../libs/p5.js/v1.1.9/p5.min.js" language="javascript" type="text/javascript"></script>
+    <script src="../libs/p5.js/p5.sound.js/v0.3.11/p5.sound.min.js" language="javascript" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="canvas_holder"></div>
+    <div id="input_holder">
+      <div id="disk_count_holder">
+        <label for="disk_count">Number&nbsp;of&nbsp;disk</label>
+        <input id="disk_count" type="number" min="3" max="10" step="1" value="3">
+      </div>
+      <div id="move_to_holder">
+        <label for="move_to">Select&nbsp;moving&nbsp;direction</label>
+        <select name="move_to" id="move_to">
+          <option value="1" selected>T1 to T2</option>
+          <option value="2">T2 to T3</option>
+          <option value="3">T3 to T1</option>
+          <option value="4">T1 to T3</option>
+          <option value="5">T3 to T2</option>
+          <option value="6">T2 to T1</option>
+        </select>
+      </div>
+    </div>
+    <div id="button_holder">
+      <button id="button_start">Start</button>
+      <button id="button_pause" style="">Pause</button>
+    </div>
+    <div>
+      <label for="speed">Moving&nbsp;speed&nbsp;&nbsp;<span id="speed_value"></span><br/></label>
+      <input id="speed" type="range" min="1" max="100" step="1" value="10">
+    </div>
+    
+    
+    <script src="sketch.js" language="javascript" type="text/javascript"></script>
+  </body>
+</html>
